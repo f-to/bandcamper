@@ -1,0 +1,19 @@
+{
+
+  "description": "Adds smalls icons to play thru a BandCamp's Fan collection or whishlist.",
+  "manifest_version": 2,
+  "name": "bandcamper",
+  "version": "1.0",
+  "homepage_url": "https://github.com/f-to/bandcamper/",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.bandcamp.com/*"],
+      "js": ["bandcamper.js"]
+    }
+  ]
+
+}
